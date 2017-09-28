@@ -59,6 +59,11 @@ type Album struct {
 	// )
 	Songs []*Song `json:"tracks"`
 
+	// @jsonSchema(
+	//		required=true, type=["string","number","integer"]
+	// )
+	NumSongs []interface{} `json:"numtracks"`
+
 	// Cover is the image that would have been on the cover if it was a tangible good.
 	// everyone loves covers.
 	//
